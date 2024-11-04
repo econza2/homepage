@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css2?family=Itim&family=Qwitcher+Grypen:wght@400;700&display=swap");
+
+.itim-regular {
+  font-family: "Itim", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.qwitcher-grypen-regular {
+  font-family: "Qwitcher Grypen", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.header {
+  background-image: linear-gradient(to bottom right, dodgerblue 65%, white 50%);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.icon {
+  height: 30px;
+  width: 30px;
+}
+
+.picture-name {
+  position: relative;
+}
+
+.top-picture {
+  max-width: 600px;
+  height: auto;
+  box-sizing: border-box;
+  padding: 40px;
+}
+
+.two-names {
+  font-size: 30px;
+  font-style: italic;
+  color: white;
+  position: absolute;
+  top: 650px;
+  left: 50px;
+}
+
+.about-me {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: white;
+  box-shadow: 5px 5px 5px lightgray;
+  padding: 20px;
+}
+
+.about-me-title {
+  font-weight: 900;
+  font-size: 30px;
+}
+
+.about-me-icons {
+  display: flex;
+  justify-content: right;
+  gap: 10px;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 10fr;
+  height: 100vh;
+  padding: 50px;
+}
+
+.main-title {
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  height: 100%;
+  width: 100%;
+  gap: 20px;
+}
+
+.card-number {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  box-shadow: 5px 5px 5px lightgray;
+}
+
+.screenshot-area {
+  height: 85%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+}
+
+.screenshot-one {
+  background-color: #be185d;
+}
+
+.screenshot-two {
+  background-color: #a855f7;
+}
+
+.screenshot-three {
+  background-color: #22c55e;
+}
+
+.screenshot-four {
+  background-color: #f472b6;
+}
+
+.screenshot-five {
+  background-color: #facc15;
+}
+
+.screenshot-six {
+  background-color: #0ea5e9;
+}
+
+.screenshot-explain {
+  display: flex;
+}
+
+.project-name-links {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px;
+}
+
+.project-name {
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.screenshot-description {
+  padding: 10px;
+  height: 50%;
+}
+
+.icon-two {
+  height: 20px;
+  width: 20px;
+}
+
+footer {
+  background-color: dodgerblue;
+  height: 75vh;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.right-side {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  color: white;
+  padding: 20px;
+  box-sizing: border-box;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-me-title {
+  font-size: 28px;
+  font-weight: 900;
+}
+
+.email-details,
+.phone-number-details {
+  display: flex;
+  gap: 10px;
+}
+
+.white {
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(135deg)
+    brightness(103%) contrast(103%);
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.icon-three {
+  height: 30px;
+  width: 30px;
+}
+
+.bottom-picture {
+  max-width: 700px;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+  .cards {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+  }
+
+  main {
+    height: 300vh;
+    grid-template-rows: 30px 10fr;
+    gap: 10px;
+  }
+
+  .right-side {
+    gap: 15px;
+  }
+
+  footer {
+    height: 75vh;
+  }
+
+  .bottom-picture {
+    max-width: 300px;
+    height: auto;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1200px) {
+  .cards {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  main {
+    height: 300vh;
+  }
+
+  footer {
+    height: 75vh;
+  }
+}
